@@ -1,5 +1,13 @@
 # CRAN submission comments
 
+## Resubmission
+
+This is a resubmission. In this version I have:
+
+- Put software names in single quotes in the Title and Description fields.
+- Written web references as URLs in angle brackets.
+- Added web references for the software and services named in the Description field.
+
 ## Test environment
 
 - Local macOS 27.0, R 4.5.1

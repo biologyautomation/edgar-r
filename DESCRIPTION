@@ -1,21 +1,27 @@
 Package: ExperimentalDesignGeneratorandRandomiser
 Type: Package
 Version: 0.1.0
-Date: 2026-08-21
-Title: EDGAR: Experimental Design Generator and Randomiser
+Date: 2026-08-22
+Title: 'EDGAR': Experimental Design Generator and Randomiser
 Description:
-    Native R implementation of EDGAR, the Experimental Design Generator
-    and Randomiser. EDGAR was originally developed as a suite of Excel
-    workbooks by the Biometrics team at Rothamsted Research and is hosted
-    at edgarweb.org.uk. The algorithms were subsequently re-implemented in
-    the open-source Python project 'rotsl/edgar', distributed as the
-    'edgar-design' package on PyPI. This R package is a native R port of
-    that Python implementation: it does not require Python, reticulate, or
-    any external service at runtime, and provides deterministic,
-    reproducible randomisation for nine experimental designs including
-    alpha designs (Patterson and Williams, 1976). Cross-language
-    reproducibility with the Python implementation is achieved by porting
-    CPython's Mersenne Twister seeding and Fisher-Yates shuffle to native R.
+    Native R implementation of 'EDGAR', the Experimental Design Generator
+    and Randomiser. 'EDGAR' was originally developed as a suite of 'Excel'
+    <https://www.microsoft.com/microsoft-365/excel> workbooks by the
+    Biometrics team at Rothamsted Research
+    <http://www.edgarweb.org.uk/>. The algorithms were subsequently
+    re-implemented in the open-source 'Python' <https://www.python.org/>
+    project 'rotsl/edgar' <https://rotsl.github.io/edgar/>, distributed as
+    the 'edgar-design' package on 'PyPI'
+    <https://pypi.org/project/edgar-design/>. This R package is a native R
+    port of that 'Python' implementation: it does not require 'Python',
+    'reticulate' <https://CRAN.R-project.org/package=reticulate>, or any
+    external service at runtime, and provides deterministic, reproducible
+    randomisation for nine experimental designs including alpha designs
+    (Patterson and Williams, 1976) <doi:10.1093/biomet/63.1.83>.
+    Cross-language reproducibility with the 'Python' implementation is
+    achieved by porting the Mersenne Twister seeding implementation from
+    'CPython' <https://github.com/python/cpython> and the Fisher-Yates
+    shuffle to native R.
 Authors@R: c(
     person(given = "Rohan",
            family = "R",
