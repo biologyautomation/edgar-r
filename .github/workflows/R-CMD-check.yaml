@@ -1,0 +1,53 @@
+# Workflow derived from https://github.com/r-lib/actions/tree/v2-branch/examples
+# Use standard r-lib/actions for R CMD check on a current stable R.
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+name: R-CMD-check
+
+jobs:
+  R-CMD-check:
+    runs-on: ${{ matrix.config.os }}
+
+    name: ${{ matrix.config.os }} (${{ matrix.config.r }})
+
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - {os: ubuntu-latest,   r: 'release'}
+          - {os: ubuntu-latest,   r: 'devel',  http-user-agent: 'release'}
+          - {os: macos-latest,    r: 'release'}
+          - {os: windows-latest,  r: 'release'}
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEPNL: true
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: ${{ matrix.config.r }}
+          http-user-agent: ${{ matrix.config.http-user-agent }}
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::rcmdcheck
+          needs: check
+
+      - uses: r-lib/actions/check-r-package@v2
+        with:
+          upload-snapshots: true
+          build-code: |
+            # Cross-language parity check (optional): confirm the R output
+            # matches the upstream Python edgar-design output for at least
+            # one seed. Skipped if Python is not available.
+            python -m pip install --quiet edgar-design

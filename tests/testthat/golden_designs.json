@@ -1,0 +1,2146 @@
+{
+  "cr_eq": {
+    "design_name": "Completely randomised design, equal replication",
+    "total_units": 12,
+    "rows": [
+      {
+        "Plot": 1,
+        "Variety": "3"
+      },
+      {
+        "Plot": 2,
+        "Variety": "2"
+      },
+      {
+        "Plot": 3,
+        "Variety": "1"
+      },
+      {
+        "Plot": 4,
+        "Variety": "3"
+      },
+      {
+        "Plot": 5,
+        "Variety": "4"
+      },
+      {
+        "Plot": 6,
+        "Variety": "3"
+      },
+      {
+        "Plot": 7,
+        "Variety": "4"
+      },
+      {
+        "Plot": 8,
+        "Variety": "2"
+      },
+      {
+        "Plot": 9,
+        "Variety": "2"
+      },
+      {
+        "Plot": 10,
+        "Variety": "1"
+      },
+      {
+        "Plot": 11,
+        "Variety": "1"
+      },
+      {
+        "Plot": 12,
+        "Variety": "4"
+      }
+    ],
+    "columns": [
+      "Plot",
+      "Variety"
+    ],
+    "warnings": []
+  },
+  "cr_uneq": {
+    "design_name": "Completely randomised design, unequal replication",
+    "total_units": 6,
+    "rows": [
+      {
+        "Plot": 1,
+        "Variety": "2"
+      },
+      {
+        "Plot": 2,
+        "Variety": "1"
+      },
+      {
+        "Plot": 3,
+        "Variety": "2"
+      },
+      {
+        "Plot": 4,
+        "Variety": "2"
+      },
+      {
+        "Plot": 5,
+        "Variety": "1"
+      },
+      {
+        "Plot": 6,
+        "Variety": "3"
+      }
+    ],
+    "columns": [
+      "Plot",
+      "Variety"
+    ],
+    "warnings": []
+  },
+  "rcb": {
+    "design_name": "Randomised complete block design",
+    "total_units": 12,
+    "rows": [
+      {
+        "Unit": 1,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 2,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "2"
+      },
+      {
+        "Unit": 3,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "4"
+      },
+      {
+        "Unit": 4,
+        "Block": 1,
+        "Plot": 4,
+        "Variety": "1"
+      },
+      {
+        "Unit": 5,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "4"
+      },
+      {
+        "Unit": 6,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "3"
+      },
+      {
+        "Unit": 7,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "1"
+      },
+      {
+        "Unit": 8,
+        "Block": 2,
+        "Plot": 4,
+        "Variety": "2"
+      },
+      {
+        "Unit": 9,
+        "Block": 3,
+        "Plot": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 10,
+        "Block": 3,
+        "Plot": 2,
+        "Variety": "4"
+      },
+      {
+        "Unit": 11,
+        "Block": 3,
+        "Plot": 3,
+        "Variety": "3"
+      },
+      {
+        "Unit": 12,
+        "Block": 3,
+        "Plot": 4,
+        "Variety": "1"
+      }
+    ],
+    "columns": [
+      "Unit",
+      "Block",
+      "Plot",
+      "Variety"
+    ],
+    "warnings": []
+  },
+  "rcb_uneq": {
+    "design_name": "Randomised complete block design, unequal replication",
+    "total_units": 8,
+    "rows": [
+      {
+        "Unit": 1,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 2,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "2"
+      },
+      {
+        "Unit": 3,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "3"
+      },
+      {
+        "Unit": 4,
+        "Block": 1,
+        "Plot": 4,
+        "Variety": "1"
+      },
+      {
+        "Unit": 5,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 6,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "2"
+      },
+      {
+        "Unit": 7,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "1"
+      },
+      {
+        "Unit": 8,
+        "Block": 2,
+        "Plot": 4,
+        "Variety": "2"
+      }
+    ],
+    "columns": [
+      "Unit",
+      "Block",
+      "Plot",
+      "Variety"
+    ],
+    "warnings": []
+  },
+  "two_factor_rcb": {
+    "design_name": "Randomised complete block design with two factors",
+    "total_units": 12,
+    "rows": [
+      {
+        "Unit": 1,
+        "Block": 1,
+        "Plot": 1,
+        "Treatment1": "2",
+        "Treatment2": "1"
+      },
+      {
+        "Unit": 2,
+        "Block": 1,
+        "Plot": 2,
+        "Treatment1": "1",
+        "Treatment2": "2"
+      },
+      {
+        "Unit": 3,
+        "Block": 1,
+        "Plot": 3,
+        "Treatment1": "1",
+        "Treatment2": "3"
+      },
+      {
+        "Unit": 4,
+        "Block": 1,
+        "Plot": 4,
+        "Treatment1": "2",
+        "Treatment2": "2"
+      },
+      {
+        "Unit": 5,
+        "Block": 1,
+        "Plot": 5,
+        "Treatment1": "1",
+        "Treatment2": "1"
+      },
+      {
+        "Unit": 6,
+        "Block": 1,
+        "Plot": 6,
+        "Treatment1": "2",
+        "Treatment2": "3"
+      },
+      {
+        "Unit": 7,
+        "Block": 2,
+        "Plot": 1,
+        "Treatment1": "2",
+        "Treatment2": "1"
+      },
+      {
+        "Unit": 8,
+        "Block": 2,
+        "Plot": 2,
+        "Treatment1": "1",
+        "Treatment2": "1"
+      },
+      {
+        "Unit": 9,
+        "Block": 2,
+        "Plot": 3,
+        "Treatment1": "1",
+        "Treatment2": "3"
+      },
+      {
+        "Unit": 10,
+        "Block": 2,
+        "Plot": 4,
+        "Treatment1": "2",
+        "Treatment2": "2"
+      },
+      {
+        "Unit": 11,
+        "Block": 2,
+        "Plot": 5,
+        "Treatment1": "2",
+        "Treatment2": "3"
+      },
+      {
+        "Unit": 12,
+        "Block": 2,
+        "Plot": 6,
+        "Treatment1": "1",
+        "Treatment2": "2"
+      }
+    ],
+    "columns": [
+      "Unit",
+      "Block",
+      "Plot",
+      "Treatment1",
+      "Treatment2"
+    ],
+    "warnings": []
+  },
+  "latin": {
+    "design_name": "Latin squares",
+    "total_units": 36,
+    "rows": [
+      {
+        "Unit": 1,
+        "Square": 1,
+        "Column": 1,
+        "Row": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 2,
+        "Square": 1,
+        "Column": 2,
+        "Row": 1,
+        "Variety": "1"
+      },
+      {
+        "Unit": 3,
+        "Square": 1,
+        "Column": 3,
+        "Row": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 4,
+        "Square": 1,
+        "Column": 1,
+        "Row": 2,
+        "Variety": "3"
+      },
+      {
+        "Unit": 5,
+        "Square": 1,
+        "Column": 2,
+        "Row": 2,
+        "Variety": "2"
+      },
+      {
+        "Unit": 6,
+        "Square": 1,
+        "Column": 3,
+        "Row": 2,
+        "Variety": "1"
+      },
+      {
+        "Unit": 7,
+        "Square": 1,
+        "Column": 1,
+        "Row": 3,
+        "Variety": "1"
+      },
+      {
+        "Unit": 8,
+        "Square": 1,
+        "Column": 2,
+        "Row": 3,
+        "Variety": "3"
+      },
+      {
+        "Unit": 9,
+        "Square": 1,
+        "Column": 3,
+        "Row": 3,
+        "Variety": "2"
+      },
+      {
+        "Unit": 10,
+        "Square": 2,
+        "Column": 1,
+        "Row": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 11,
+        "Square": 2,
+        "Column": 2,
+        "Row": 1,
+        "Variety": "1"
+      },
+      {
+        "Unit": 12,
+        "Square": 2,
+        "Column": 3,
+        "Row": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 13,
+        "Square": 2,
+        "Column": 1,
+        "Row": 2,
+        "Variety": "2"
+      },
+      {
+        "Unit": 14,
+        "Square": 2,
+        "Column": 2,
+        "Row": 2,
+        "Variety": "3"
+      },
+      {
+        "Unit": 15,
+        "Square": 2,
+        "Column": 3,
+        "Row": 2,
+        "Variety": "1"
+      },
+      {
+        "Unit": 16,
+        "Square": 2,
+        "Column": 1,
+        "Row": 3,
+        "Variety": "1"
+      },
+      {
+        "Unit": 17,
+        "Square": 2,
+        "Column": 2,
+        "Row": 3,
+        "Variety": "2"
+      },
+      {
+        "Unit": 18,
+        "Square": 2,
+        "Column": 3,
+        "Row": 3,
+        "Variety": "3"
+      },
+      {
+        "Unit": 19,
+        "Square": 3,
+        "Column": 1,
+        "Row": 1,
+        "Variety": "1"
+      },
+      {
+        "Unit": 20,
+        "Square": 3,
+        "Column": 2,
+        "Row": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 21,
+        "Square": 3,
+        "Column": 3,
+        "Row": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 22,
+        "Square": 3,
+        "Column": 1,
+        "Row": 2,
+        "Variety": "2"
+      },
+      {
+        "Unit": 23,
+        "Square": 3,
+        "Column": 2,
+        "Row": 2,
+        "Variety": "3"
+      },
+      {
+        "Unit": 24,
+        "Square": 3,
+        "Column": 3,
+        "Row": 2,
+        "Variety": "1"
+      },
+      {
+        "Unit": 25,
+        "Square": 3,
+        "Column": 1,
+        "Row": 3,
+        "Variety": "3"
+      },
+      {
+        "Unit": 26,
+        "Square": 3,
+        "Column": 2,
+        "Row": 3,
+        "Variety": "1"
+      },
+      {
+        "Unit": 27,
+        "Square": 3,
+        "Column": 3,
+        "Row": 3,
+        "Variety": "2"
+      },
+      {
+        "Unit": 28,
+        "Square": 4,
+        "Column": 1,
+        "Row": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 29,
+        "Square": 4,
+        "Column": 2,
+        "Row": 1,
+        "Variety": "1"
+      },
+      {
+        "Unit": 30,
+        "Square": 4,
+        "Column": 3,
+        "Row": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 31,
+        "Square": 4,
+        "Column": 1,
+        "Row": 2,
+        "Variety": "2"
+      },
+      {
+        "Unit": 32,
+        "Square": 4,
+        "Column": 2,
+        "Row": 2,
+        "Variety": "3"
+      },
+      {
+        "Unit": 33,
+        "Square": 4,
+        "Column": 3,
+        "Row": 2,
+        "Variety": "1"
+      },
+      {
+        "Unit": 34,
+        "Square": 4,
+        "Column": 1,
+        "Row": 3,
+        "Variety": "1"
+      },
+      {
+        "Unit": 35,
+        "Square": 4,
+        "Column": 2,
+        "Row": 3,
+        "Variety": "2"
+      },
+      {
+        "Unit": 36,
+        "Square": 4,
+        "Column": 3,
+        "Row": 3,
+        "Variety": "3"
+      }
+    ],
+    "columns": [
+      "Unit",
+      "Square",
+      "Column",
+      "Row",
+      "Variety"
+    ],
+    "warnings": []
+  },
+  "split_plot": {
+    "design_name": "Split plot design with randomised complete blocks",
+    "total_units": 12,
+    "rows": [
+      {
+        "Unit": 1,
+        "Block": 1,
+        "Main plot": 1,
+        "MainTreat": "2",
+        "Sub-plot": 1,
+        "SubTreat": "3"
+      },
+      {
+        "Unit": 2,
+        "Block": 1,
+        "Main plot": 1,
+        "MainTreat": "2",
+        "Sub-plot": 2,
+        "SubTreat": "2"
+      },
+      {
+        "Unit": 3,
+        "Block": 1,
+        "Main plot": 1,
+        "MainTreat": "2",
+        "Sub-plot": 3,
+        "SubTreat": "1"
+      },
+      {
+        "Unit": 4,
+        "Block": 1,
+        "Main plot": 2,
+        "MainTreat": "1",
+        "Sub-plot": 1,
+        "SubTreat": "2"
+      },
+      {
+        "Unit": 5,
+        "Block": 1,
+        "Main plot": 2,
+        "MainTreat": "1",
+        "Sub-plot": 2,
+        "SubTreat": "3"
+      },
+      {
+        "Unit": 6,
+        "Block": 1,
+        "Main plot": 2,
+        "MainTreat": "1",
+        "Sub-plot": 3,
+        "SubTreat": "1"
+      },
+      {
+        "Unit": 7,
+        "Block": 2,
+        "Main plot": 1,
+        "MainTreat": "2",
+        "Sub-plot": 1,
+        "SubTreat": "2"
+      },
+      {
+        "Unit": 8,
+        "Block": 2,
+        "Main plot": 1,
+        "MainTreat": "2",
+        "Sub-plot": 2,
+        "SubTreat": "1"
+      },
+      {
+        "Unit": 9,
+        "Block": 2,
+        "Main plot": 1,
+        "MainTreat": "2",
+        "Sub-plot": 3,
+        "SubTreat": "3"
+      },
+      {
+        "Unit": 10,
+        "Block": 2,
+        "Main plot": 2,
+        "MainTreat": "1",
+        "Sub-plot": 1,
+        "SubTreat": "2"
+      },
+      {
+        "Unit": 11,
+        "Block": 2,
+        "Main plot": 2,
+        "MainTreat": "1",
+        "Sub-plot": 2,
+        "SubTreat": "1"
+      },
+      {
+        "Unit": 12,
+        "Block": 2,
+        "Main plot": 2,
+        "MainTreat": "1",
+        "Sub-plot": 3,
+        "SubTreat": "3"
+      }
+    ],
+    "columns": [
+      "Unit",
+      "Block",
+      "Main plot",
+      "MainTreat",
+      "Sub-plot",
+      "SubTreat"
+    ],
+    "warnings": []
+  },
+  "variable_blocks": {
+    "design_name": "Randomised blocks of different sizes",
+    "total_units": 12,
+    "rows": [
+      {
+        "Unit": 1,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 2,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "4"
+      },
+      {
+        "Unit": 3,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "3"
+      },
+      {
+        "Unit": 4,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 5,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "1"
+      },
+      {
+        "Unit": 6,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "4"
+      },
+      {
+        "Unit": 7,
+        "Block": 3,
+        "Plot": 1,
+        "Variety": "4"
+      },
+      {
+        "Unit": 8,
+        "Block": 3,
+        "Plot": 2,
+        "Variety": "2"
+      },
+      {
+        "Unit": 9,
+        "Block": 4,
+        "Plot": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 10,
+        "Block": 4,
+        "Plot": 2,
+        "Variety": "1"
+      },
+      {
+        "Unit": 11,
+        "Block": 5,
+        "Plot": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 12,
+        "Block": 5,
+        "Plot": 2,
+        "Variety": "1"
+      }
+    ],
+    "columns": [
+      "Unit",
+      "Block",
+      "Plot",
+      "Variety"
+    ],
+    "warnings": []
+  },
+  "alpha": {
+    "design_name": "Alpha design",
+    "total_units": 80,
+    "rows": [
+      {
+        "Unit": 1,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "20"
+      },
+      {
+        "Unit": 2,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "17"
+      },
+      {
+        "Unit": 3,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "18"
+      },
+      {
+        "Unit": 4,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 4,
+        "Variety": "14"
+      },
+      {
+        "Unit": 5,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "6"
+      },
+      {
+        "Unit": 6,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "11"
+      },
+      {
+        "Unit": 7,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "8"
+      },
+      {
+        "Unit": 8,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 4,
+        "Variety": "16"
+      },
+      {
+        "Unit": 9,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 10,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 2,
+        "Variety": "19"
+      },
+      {
+        "Unit": 11,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 3,
+        "Variety": "9"
+      },
+      {
+        "Unit": 12,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 4,
+        "Variety": "15"
+      },
+      {
+        "Unit": 13,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 1,
+        "Variety": "1"
+      },
+      {
+        "Unit": 14,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 2,
+        "Variety": "5"
+      },
+      {
+        "Unit": 15,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 3,
+        "Variety": "7"
+      },
+      {
+        "Unit": 16,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 4,
+        "Variety": "12"
+      },
+      {
+        "Unit": 17,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 18,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 2,
+        "Variety": "10"
+      },
+      {
+        "Unit": 19,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 3,
+        "Variety": "4"
+      },
+      {
+        "Unit": 20,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 4,
+        "Variety": "13"
+      },
+      {
+        "Unit": 21,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 22,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "1"
+      },
+      {
+        "Unit": 23,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "16"
+      },
+      {
+        "Unit": 24,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 4,
+        "Variety": "20"
+      },
+      {
+        "Unit": 25,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "6"
+      },
+      {
+        "Unit": 26,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "4"
+      },
+      {
+        "Unit": 27,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "19"
+      },
+      {
+        "Unit": 28,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 4,
+        "Variety": "12"
+      },
+      {
+        "Unit": 29,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 1,
+        "Variety": "17"
+      },
+      {
+        "Unit": 30,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 2,
+        "Variety": "7"
+      },
+      {
+        "Unit": 31,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 3,
+        "Variety": "3"
+      },
+      {
+        "Unit": 32,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 4,
+        "Variety": "15"
+      },
+      {
+        "Unit": 33,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 1,
+        "Variety": "18"
+      },
+      {
+        "Unit": 34,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 2,
+        "Variety": "8"
+      },
+      {
+        "Unit": 35,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 3,
+        "Variety": "13"
+      },
+      {
+        "Unit": 36,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 4,
+        "Variety": "5"
+      },
+      {
+        "Unit": 37,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 1,
+        "Variety": "10"
+      },
+      {
+        "Unit": 38,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 2,
+        "Variety": "14"
+      },
+      {
+        "Unit": 39,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 3,
+        "Variety": "9"
+      },
+      {
+        "Unit": 40,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 4,
+        "Variety": "11"
+      },
+      {
+        "Unit": 41,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "9"
+      },
+      {
+        "Unit": 42,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "20"
+      },
+      {
+        "Unit": 43,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "12"
+      },
+      {
+        "Unit": 44,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 4,
+        "Variety": "13"
+      },
+      {
+        "Unit": 45,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "14"
+      },
+      {
+        "Unit": 46,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "1"
+      },
+      {
+        "Unit": 47,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "3"
+      },
+      {
+        "Unit": 48,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 4,
+        "Variety": "6"
+      },
+      {
+        "Unit": 49,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 1,
+        "Variety": "16"
+      },
+      {
+        "Unit": 50,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 2,
+        "Variety": "4"
+      },
+      {
+        "Unit": 51,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 3,
+        "Variety": "15"
+      },
+      {
+        "Unit": 52,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 4,
+        "Variety": "18"
+      },
+      {
+        "Unit": 53,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 1,
+        "Variety": "17"
+      },
+      {
+        "Unit": 54,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 2,
+        "Variety": "11"
+      },
+      {
+        "Unit": 55,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 3,
+        "Variety": "19"
+      },
+      {
+        "Unit": 56,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 4,
+        "Variety": "5"
+      },
+      {
+        "Unit": 57,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 1,
+        "Variety": "10"
+      },
+      {
+        "Unit": 58,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 2,
+        "Variety": "7"
+      },
+      {
+        "Unit": 59,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 3,
+        "Variety": "2"
+      },
+      {
+        "Unit": 60,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 4,
+        "Variety": "8"
+      },
+      {
+        "Unit": 61,
+        "Rep": 4,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "20"
+      },
+      {
+        "Unit": 62,
+        "Rep": 4,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "3"
+      },
+      {
+        "Unit": 63,
+        "Rep": 4,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "8"
+      },
+      {
+        "Unit": 64,
+        "Rep": 4,
+        "Block": 1,
+        "Plot": 4,
+        "Variety": "19"
+      },
+      {
+        "Unit": 65,
+        "Rep": 4,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "6"
+      },
+      {
+        "Unit": 66,
+        "Rep": 4,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "9"
+      },
+      {
+        "Unit": 67,
+        "Rep": 4,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "18"
+      },
+      {
+        "Unit": 68,
+        "Rep": 4,
+        "Block": 2,
+        "Plot": 4,
+        "Variety": "7"
+      },
+      {
+        "Unit": 69,
+        "Rep": 4,
+        "Block": 3,
+        "Plot": 1,
+        "Variety": "13"
+      },
+      {
+        "Unit": 70,
+        "Rep": 4,
+        "Block": 3,
+        "Plot": 2,
+        "Variety": "1"
+      },
+      {
+        "Unit": 71,
+        "Rep": 4,
+        "Block": 3,
+        "Plot": 3,
+        "Variety": "11"
+      },
+      {
+        "Unit": 72,
+        "Rep": 4,
+        "Block": 3,
+        "Plot": 4,
+        "Variety": "15"
+      },
+      {
+        "Unit": 73,
+        "Rep": 4,
+        "Block": 4,
+        "Plot": 1,
+        "Variety": "2"
+      },
+      {
+        "Unit": 74,
+        "Rep": 4,
+        "Block": 4,
+        "Plot": 2,
+        "Variety": "4"
+      },
+      {
+        "Unit": 75,
+        "Rep": 4,
+        "Block": 4,
+        "Plot": 3,
+        "Variety": "5"
+      },
+      {
+        "Unit": 76,
+        "Rep": 4,
+        "Block": 4,
+        "Plot": 4,
+        "Variety": "14"
+      },
+      {
+        "Unit": 77,
+        "Rep": 4,
+        "Block": 5,
+        "Plot": 1,
+        "Variety": "12"
+      },
+      {
+        "Unit": 78,
+        "Rep": 4,
+        "Block": 5,
+        "Plot": 2,
+        "Variety": "10"
+      },
+      {
+        "Unit": 79,
+        "Rep": 4,
+        "Block": 5,
+        "Plot": 3,
+        "Variety": "16"
+      },
+      {
+        "Unit": 80,
+        "Rep": 4,
+        "Block": 5,
+        "Plot": 4,
+        "Variety": "17"
+      }
+    ],
+    "columns": [
+      "Unit",
+      "Rep",
+      "Block",
+      "Plot",
+      "Variety"
+    ],
+    "warnings": []
+  },
+  "alpha_controls": {
+    "design_name": "Alpha design",
+    "total_units": 108,
+    "rows": [
+      {
+        "Unit": 1,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "20"
+      },
+      {
+        "Unit": 2,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 3,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "18"
+      },
+      {
+        "Unit": 4,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 4,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 5,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 5,
+        "Variety": "16"
+      },
+      {
+        "Unit": 6,
+        "Rep": 1,
+        "Block": 1,
+        "Plot": 6,
+        "Variety": "22"
+      },
+      {
+        "Unit": 7,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "7"
+      },
+      {
+        "Unit": 8,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "12"
+      },
+      {
+        "Unit": 9,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 10,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 4,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 11,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 5,
+        "Variety": "8"
+      },
+      {
+        "Unit": 12,
+        "Rep": 1,
+        "Block": 2,
+        "Plot": 6,
+        "Variety": "6"
+      },
+      {
+        "Unit": 13,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 1,
+        "Variety": "19"
+      },
+      {
+        "Unit": 14,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 2,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 15,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 3,
+        "Variety": "10"
+      },
+      {
+        "Unit": 16,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 4,
+        "Variety": "15"
+      },
+      {
+        "Unit": 17,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 5,
+        "Variety": "9"
+      },
+      {
+        "Unit": 18,
+        "Rep": 1,
+        "Block": 3,
+        "Plot": 6,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 19,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 1,
+        "Variety": "17"
+      },
+      {
+        "Unit": 20,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 2,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 21,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 3,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 22,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 4,
+        "Variety": "1"
+      },
+      {
+        "Unit": 23,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 5,
+        "Variety": "3"
+      },
+      {
+        "Unit": 24,
+        "Rep": 1,
+        "Block": 4,
+        "Plot": 6,
+        "Variety": "24"
+      },
+      {
+        "Unit": 25,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 1,
+        "Variety": "14"
+      },
+      {
+        "Unit": 26,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 2,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 27,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 3,
+        "Variety": "4"
+      },
+      {
+        "Unit": 28,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 4,
+        "Variety": "2"
+      },
+      {
+        "Unit": 29,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 5,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 30,
+        "Rep": 1,
+        "Block": 5,
+        "Plot": 6,
+        "Variety": "23"
+      },
+      {
+        "Unit": 31,
+        "Rep": 1,
+        "Block": 6,
+        "Plot": 1,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 32,
+        "Rep": 1,
+        "Block": 6,
+        "Plot": 2,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 33,
+        "Rep": 1,
+        "Block": 6,
+        "Plot": 3,
+        "Variety": "13"
+      },
+      {
+        "Unit": 34,
+        "Rep": 1,
+        "Block": 6,
+        "Plot": 4,
+        "Variety": "11"
+      },
+      {
+        "Unit": 35,
+        "Rep": 1,
+        "Block": 6,
+        "Plot": 5,
+        "Variety": "5"
+      },
+      {
+        "Unit": 36,
+        "Rep": 1,
+        "Block": 6,
+        "Plot": 6,
+        "Variety": "21"
+      },
+      {
+        "Unit": 37,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 38,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "12"
+      },
+      {
+        "Unit": 39,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "16"
+      },
+      {
+        "Unit": 40,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 4,
+        "Variety": "3"
+      },
+      {
+        "Unit": 41,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 5,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 42,
+        "Rep": 2,
+        "Block": 1,
+        "Plot": 6,
+        "Variety": "9"
+      },
+      {
+        "Unit": 43,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "1"
+      },
+      {
+        "Unit": 44,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "15"
+      },
+      {
+        "Unit": 45,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "23"
+      },
+      {
+        "Unit": 46,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 4,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 47,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 5,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 48,
+        "Rep": 2,
+        "Block": 2,
+        "Plot": 6,
+        "Variety": "6"
+      },
+      {
+        "Unit": 49,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 1,
+        "Variety": "5"
+      },
+      {
+        "Unit": 50,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 2,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 51,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 3,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 52,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 4,
+        "Variety": "4"
+      },
+      {
+        "Unit": 53,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 5,
+        "Variety": "17"
+      },
+      {
+        "Unit": 54,
+        "Rep": 2,
+        "Block": 3,
+        "Plot": 6,
+        "Variety": "19"
+      },
+      {
+        "Unit": 55,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 1,
+        "Variety": "22"
+      },
+      {
+        "Unit": 56,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 2,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 57,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 3,
+        "Variety": "2"
+      },
+      {
+        "Unit": 58,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 4,
+        "Variety": "21"
+      },
+      {
+        "Unit": 59,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 5,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 60,
+        "Rep": 2,
+        "Block": 4,
+        "Plot": 6,
+        "Variety": "24"
+      },
+      {
+        "Unit": 61,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 1,
+        "Variety": "14"
+      },
+      {
+        "Unit": 62,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 2,
+        "Variety": "13"
+      },
+      {
+        "Unit": 63,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 3,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 64,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 4,
+        "Variety": "20"
+      },
+      {
+        "Unit": 65,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 5,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 66,
+        "Rep": 2,
+        "Block": 5,
+        "Plot": 6,
+        "Variety": "7"
+      },
+      {
+        "Unit": 67,
+        "Rep": 2,
+        "Block": 6,
+        "Plot": 1,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 68,
+        "Rep": 2,
+        "Block": 6,
+        "Plot": 2,
+        "Variety": "8"
+      },
+      {
+        "Unit": 69,
+        "Rep": 2,
+        "Block": 6,
+        "Plot": 3,
+        "Variety": "10"
+      },
+      {
+        "Unit": 70,
+        "Rep": 2,
+        "Block": 6,
+        "Plot": 4,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 71,
+        "Rep": 2,
+        "Block": 6,
+        "Plot": 5,
+        "Variety": "11"
+      },
+      {
+        "Unit": 72,
+        "Rep": 2,
+        "Block": 6,
+        "Plot": 6,
+        "Variety": "18"
+      },
+      {
+        "Unit": 73,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 1,
+        "Variety": "13"
+      },
+      {
+        "Unit": 74,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 2,
+        "Variety": "16"
+      },
+      {
+        "Unit": 75,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 3,
+        "Variety": "10"
+      },
+      {
+        "Unit": 76,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 4,
+        "Variety": "1"
+      },
+      {
+        "Unit": 77,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 5,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 78,
+        "Rep": 3,
+        "Block": 1,
+        "Plot": 6,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 79,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 1,
+        "Variety": "3"
+      },
+      {
+        "Unit": 80,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 2,
+        "Variety": "18"
+      },
+      {
+        "Unit": 81,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 3,
+        "Variety": "4"
+      },
+      {
+        "Unit": 82,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 4,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 83,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 5,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 84,
+        "Rep": 3,
+        "Block": 2,
+        "Plot": 6,
+        "Variety": "6"
+      },
+      {
+        "Unit": 85,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 1,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 86,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 2,
+        "Variety": "21"
+      },
+      {
+        "Unit": 87,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 3,
+        "Variety": "19"
+      },
+      {
+        "Unit": 88,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 4,
+        "Variety": "23"
+      },
+      {
+        "Unit": 89,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 5,
+        "Variety": "12"
+      },
+      {
+        "Unit": 90,
+        "Rep": 3,
+        "Block": 3,
+        "Plot": 6,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 91,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 1,
+        "Variety": "5"
+      },
+      {
+        "Unit": 92,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 2,
+        "Variety": "15"
+      },
+      {
+        "Unit": 93,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 3,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 94,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 4,
+        "Variety": "20"
+      },
+      {
+        "Unit": 95,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 5,
+        "Variety": "24"
+      },
+      {
+        "Unit": 96,
+        "Rep": 3,
+        "Block": 4,
+        "Plot": 6,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 97,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 1,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 98,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 2,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 99,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 3,
+        "Variety": "14"
+      },
+      {
+        "Unit": 100,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 4,
+        "Variety": "17"
+      },
+      {
+        "Unit": 101,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 5,
+        "Variety": "22"
+      },
+      {
+        "Unit": 102,
+        "Rep": 3,
+        "Block": 5,
+        "Plot": 6,
+        "Variety": "8"
+      },
+      {
+        "Unit": 103,
+        "Rep": 3,
+        "Block": 6,
+        "Plot": 1,
+        "Variety": "C1"
+      },
+      {
+        "Unit": 104,
+        "Rep": 3,
+        "Block": 6,
+        "Plot": 2,
+        "Variety": "2"
+      },
+      {
+        "Unit": 105,
+        "Rep": 3,
+        "Block": 6,
+        "Plot": 3,
+        "Variety": "9"
+      },
+      {
+        "Unit": 106,
+        "Rep": 3,
+        "Block": 6,
+        "Plot": 4,
+        "Variety": "7"
+      },
+      {
+        "Unit": 107,
+        "Rep": 3,
+        "Block": 6,
+        "Plot": 5,
+        "Variety": "C2"
+      },
+      {
+        "Unit": 108,
+        "Rep": 3,
+        "Block": 6,
+        "Plot": 6,
+        "Variety": "11"
+      }
+    ],
+    "columns": [
+      "Unit",
+      "Rep",
+      "Block",
+      "Plot",
+      "Variety"
+    ],
+    "warnings": []
+  }
+}

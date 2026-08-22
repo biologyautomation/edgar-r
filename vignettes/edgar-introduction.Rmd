@@ -1,0 +1,115 @@
+---
+title: "Introduction to EDGAR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to EDGAR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# What EDGAR is
+
+EDGAR stands for Experimental Design Generator and Randomiser. It was originally developed as a suite of Excel workbooks by the Biometrics team at Rothamsted Research. The same algorithms were re-implemented in the open-source Python project `rotsl/edgar`, distributed as `edgar-design` on PyPI. This R package is a native R port of that Python implementation. Python is not required at runtime.
+
+# Installing
+
+Once the package is available on CRAN, install it with:
+
+```r
+install.packages("ExperimentalDesignGeneratorandRandomiser")
+```
+
+For development, you can install from a local checkout with:
+
+```r
+# devtools::install("/path/to/edgar-r")
+```
+
+# Listing designs
+
+```r
+library(ExperimentalDesignGeneratorandRandomiser)
+list_designs()
+#>       key                              name has_layout has_blocks
+#> 1   cr_eq Completely Randomised, Equal...      FALSE      FALSE
+#> 2 cr_uneq Completely Randomised, Uneq...     FALSE      FALSE
+#> 3     rcb           Randomised Complete ...       TRUE       TRUE
+#> ...
+```
+
+# Generating a design
+
+Use `generate_design(type, ..., seed = 0L)` with one of the nine design keys: `cr_eq`, `cr_uneq`, `rcb`, `rcb_uneq`, `two_factor_rcb`, `latin`, `split_plot`, `variable_blocks`, `alpha`.
+
+```r
+res <- generate_design("rcb", treatment_count = 4, block_count = 3, seed = 42)
+print(res)
+```
+
+Each design is also available via a design-specific convenience function:
+
+```r
+res <- design_rcb(treatment_count = 4, block_count = 3, seed = 42)
+```
+
+# Reproducibility
+
+The package ports CPython's Mersenne Twister seeding algorithm and Fisher-Yates shuffle to native R. The same integer seed produces the same design in R and in the upstream Python `edgar-design` package. Generating a design never modifies the global `.Random.seed`, so unrelated user code that uses `sample()` or `runif()` is not affected.
+
+```r
+# Run twice with the same seed; the output is identical
+res1 <- generate_design("rcb", treatment_count = 4, block_count = 3, seed = 42)
+res2 <- generate_design("rcb", treatment_count = 4, block_count = 3, seed = 42)
+identical(as.data.frame(res1), as.data.frame(res2))
+#> [1] TRUE
+
+# Different seeds produce different designs (with overwhelming probability)
+res3 <- generate_design("rcb", treatment_count = 4, block_count = 3, seed = 43)
+identical(as.data.frame(res1)$Variety, as.data.frame(res3)$Variety)
+#> [1] FALSE
+```
+
+# Working with the result
+
+Every design returns an `edgar_design` S3 object. You can:
+
+- print it,
+- coerce it to an ordinary `data.frame`,
+- inspect the metadata via `$design_name`, `$parameters`, `$seed`, `$warnings`, `$generated_at`,
+- inspect the layout view via `$layout`, `$layout_headers`, `$layout_section_labels`, or via `as_layout_frames()`.
+
+```r
+df <- as.data.frame(res)
+head(df)
+```
+
+# Exporting
+
+CSV export uses no extra dependencies:
+
+```r
+write_edgar_csv(res, file = "design.csv")
+```
+
+JSON export requires the `jsonlite` package (in `Suggests`):
+
+```r
+write_edgar_json(res, file = "design.json")
+```
+
+XLSX export requires the `openxlsx` package (in `Suggests`):
+
+```r
+write_edgar_xlsx(res, file = "design.xlsx")
+```
+
+# Provenance
+
+EDGAR was originally developed by the Biometrics team at Rothamsted Research as Excel workbooks, available at edgarweb.org.uk. The algorithms were subsequently re-implemented in Python by the `rotsl/edgar` project, distributed as `edgar-design` on PyPI. This R package is a native R port of that Python implementation, with byte-identical cross-language reproducibility for the same integer seed. Alpha designs follow the methodology described by Patterson and Williams (1976).

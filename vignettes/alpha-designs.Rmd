@@ -1,0 +1,75 @@
+---
+title: "Alpha designs and structure proposal"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Alpha designs and structure proposal}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Background
+
+Alpha designs are resolvable incomplete block designs introduced by Patterson and Williams (1976). The design consists of `r` replicates, each split into `s` incomplete blocks of `k` plots each. The design is resolvable when every replicate contains all `v` treatments exactly once; this requires `s * k >= v`.
+
+This R package implements the alpha design using the exact generating arrays extracted from the historical EDGAR `Alpha.xls` workbook (a property of the Biometrics team at Rothamsted Research). The same generating arrays are used by the upstream Python `edgar-design` package; this R port reproduces that implementation faithfully.
+
+# Generating an alpha design
+
+```r
+library(ExperimentalDesignGeneratorandRandomiser)
+res <- design_alpha(
+  treatment_count = 24,
+  reps = 2,
+  blocks_per_replicate = 6,
+  seed = 100
+)
+df <- as.data.frame(res)
+head(df)
+```
+
+The result contains `Unit`, `Rep`, `Block`, `Plot`, and `Variety` columns. Each replicate has all treatments exactly once, partitioned into `s` blocks of `k` plots.
+
+# Repeated controls
+
+Alpha designs can include `repeated_controls` controls (0..6). Controls appear at the top of every block in every replicate, ensuring they are "repeated" across the design.
+
+```r
+res <- design_alpha(
+  treatment_count = 24,
+  reps = 2,
+  blocks_per_replicate = 6,
+  repeated_controls = 2,
+  seed = 100
+)
+df <- as.data.frame(res)
+unique(df$Variety)  # contains C1, C2 plus the 24 numbered treatments
+```
+
+# Proposing alpha structures
+
+For a given treatment count, several `(s, k)` combinations may be feasible. Use `propose_alpha_structures()` to list them:
+
+```r
+propose_alpha_structures(24)
+#>   s k blocks_per_replicate plots_per_block min_treatments max_treatments
+#> 1 6 4                   6               4             24            36
+#> 2 7 4                   7               4             28            49
+#> ...
+```
+
+`choose_design()` is an alias for `propose_alpha_structures()`, matching the upstream Python API.
+
+# Resolvability
+
+Each replicate of an alpha design is resolvable: every treatment appears exactly once per replicate. The implementation enforces this by using the Patterson-Williams cyclic interchanging on top of the Rep 1 base layout. The rotation tables (extracted from the original EDGAR `Alpha.xls`) cover `s` values from 5 to 15.
+
+# Reference
+
+Patterson, H.D. & Williams, E.R. (1976). A new class of resolvable incomplete block designs. *Biometrika*, 63(1), 83-92. doi:10.1093/biomet/63.1.83

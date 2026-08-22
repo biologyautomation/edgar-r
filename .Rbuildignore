@@ -1,0 +1,17 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.Rd2pdf
+^\.github$
+^LICENSE\.note$
+^CODE_OF_CONDUCT\.md$
+^CONTRIBUTING\.md$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^edgar_upstream_audit\.md$
+^scripts$
+^Makefile$
+^CRAN-RELEASE$
+^cr-release$
+^cran-comments\.md$
+^\.vscode$

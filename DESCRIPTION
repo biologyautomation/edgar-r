@@ -1,0 +1,47 @@
+Package: ExperimentalDesignGeneratorandRandomiser
+Type: Package
+Version: 0.1.0
+Date: 2026-08-21
+Title: EDGAR: Experimental Design Generator and Randomiser
+Description:
+    Native R implementation of EDGAR, the Experimental Design Generator
+    and Randomiser. EDGAR was originally developed as a suite of Excel
+    workbooks by the Biometrics team at Rothamsted Research and is hosted
+    at edgarweb.org.uk. The algorithms were subsequently re-implemented in
+    the open-source Python project 'rotsl/edgar', distributed as the
+    'edgar-design' package on PyPI. This R package is a native R port of
+    that Python implementation: it does not require Python, reticulate, or
+    any external service at runtime, and provides deterministic,
+    reproducible randomisation for nine experimental designs including
+    alpha designs (Patterson and Williams, 1976). Cross-language
+    reproducibility with the Python implementation is achieved by porting
+    CPython's Mersenne Twister seeding and Fisher-Yates shuffle to native R.
+Authors@R: c(
+    person(given = "Rohan",
+           family = "R",
+           role = c("aut", "cph"),
+           email = "phonics-tiffs1i@icloud.com",
+           comment = c(ORCID = "0009-0005-9225-1775",
+                       "Author of the upstream Python implementation rotsl/edgar and this native R port")),
+    person(given = "BiologyAutomation",
+           role = "cre",
+           email = "phonics-tiffs1i@icloud.com",
+           comment = "Repository owner"))
+Maintainer: BiologyAutomation <phonics-tiffs1i@icloud.com>
+URL: https://github.com/biologyautomation/edgar-r,
+    https://rotsl.github.io/edgar/,
+    http://www.edgarweb.org.uk/
+BugReports: https://github.com/biologyautomation/edgar-r/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.6)
+Suggests:
+    jsonlite,
+    openxlsx,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Roxygen: list(markdown = TRUE)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
